@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>username</ion-title>
+    <ion-label size="small" routerLink="/home">&nbsp;< Home</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-list *ngFor="let item of items; let i = index" >
+      <ion-item (click)=setUserName(i);>{{ item }}</ion-item>
+    </ion-list>  
+  </div>
+</ion-content>
