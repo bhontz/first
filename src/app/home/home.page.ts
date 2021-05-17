@@ -65,7 +65,7 @@ export class HomePage {
     });
   }
 
-  ionViewDidEnter() {
+  ionViewWillEnter() {
     this.localStore.get("Username").then((result) => {
       if (result != null && result != undefined)
         this.labelUsername = result;
